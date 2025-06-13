@@ -12,7 +12,6 @@ struct Node
 struct Node *head = NULL;
 struct Node *current = NULL;
 
-
 void insertFirstNode(int key, int data){
 
     struct Node *newnode  = ( struct Node*) malloc(sizeof(struct Node));
@@ -21,7 +20,6 @@ void insertFirstNode(int key, int data){
     newnode->next = head;
     head = newnode;
 }
-
 
 void printList(){
 
@@ -40,8 +38,7 @@ struct Node* deleteFirstNode(){
     struct Node *temp = head;
     head = head->next;
     return temp;
-
-    
+   
 }
 
 bool isEmpty(){
